@@ -1,0 +1,92 @@
+/* Follow the host screen kit; fall back to the light palette. */
+:root {
+  color-scheme: light dark;
+}
+body {
+  margin: 0;
+  font: 14px/1.45 system-ui, sans-serif;
+  color: var(--fg, #1d1d1f);
+  background: var(--surface, transparent);
+}
+.works-app {
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+.works-app h1 {
+  color: var(--fg, #1d1d1f);
+}
+.works-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid var(--border, #d2d2d7);
+  border-radius: 6px;
+  background: var(--surface, #fff);
+  color: var(--fg, #1d1d1f);
+  cursor: pointer;
+}
+.works-row[disabled] {
+  cursor: default;
+  opacity: 0.6;
+}
+.works-form {
+  display: grid;
+  gap: 8px;
+}
+.works-form label {
+  display: grid;
+  gap: 4px;
+  color: var(--fg, #1d1d1f);
+}
+.works-form input,
+.works-form select,
+.works-form textarea,
+.works-row-cells input,
+.works-blocks textarea,
+.works-blocks select,
+.works-slides input,
+.works-slides textarea,
+.works-sheet input {
+  color: var(--fg, #1d1d1f);
+  background: var(--surface, #fff);
+  border: 1px solid var(--border, #d2d2d7);
+  border-radius: 6px;
+  padding: 6px;
+  font: inherit;
+}
+.works-form textarea {
+  min-height: 120px;
+}
+.works-notice {
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: var(--surface, #f5f5f7);
+  color: var(--fg, #1d1d1f);
+}
+.works-notice.refused {
+  background: #fdecea;
+  color: #8a1c12;
+}
+.works-actions button,
+.works-row button {
+  color: var(--fg, #1d1d1f);
+  background: var(--surface, #fff);
+  border: 1px solid var(--border, #d2d2d7);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font: inherit;
+  cursor: pointer;
+}
+.works-actions button:disabled,
+.works-row button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.works-empty,
+.works-trashed {
+  color: var(--muted, #6e6e73);
+}

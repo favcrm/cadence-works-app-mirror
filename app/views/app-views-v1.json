@@ -1,0 +1,131 @@
+{
+  "contract": "app-views/v1",
+  "app": "works",
+  "title": "Works",
+  "summary": "Data-only views for the Works document list and one document detail. The screen draws the live host projection; these views only describe the fields.",
+  "views": [
+    {
+      "id": "documents",
+      "title": "Documents",
+      "kind": "table",
+      "fields": [
+        {
+          "id": "title",
+          "label": "Name",
+          "format": "text"
+        },
+        {
+          "id": "kind",
+          "label": "Kind",
+          "format": "enum",
+          "values": [
+            "doc",
+            "deck",
+            "sheet"
+          ]
+        },
+        {
+          "id": "revision",
+          "label": "Revision",
+          "format": "text"
+        },
+        {
+          "id": "review-state",
+          "label": "State",
+          "format": "enum",
+          "values": [
+            "draft",
+            "edited",
+            "reviewed"
+          ]
+        },
+        {
+          "id": "updated",
+          "label": "Updated",
+          "format": "text"
+        },
+        {
+          "id": "owner",
+          "label": "Owner",
+          "format": "text"
+        }
+      ],
+      "columns": [
+        {
+          "field": "title"
+        },
+        {
+          "field": "kind"
+        },
+        {
+          "field": "revision"
+        },
+        {
+          "field": "review-state"
+        },
+        {
+          "field": "updated"
+        },
+        {
+          "field": "owner"
+        }
+      ]
+    },
+    {
+      "id": "document",
+      "title": "Document",
+      "kind": "detail",
+      "fields": [
+        {
+          "id": "title",
+          "label": "Name",
+          "format": "text"
+        },
+        {
+          "id": "kind",
+          "label": "Kind",
+          "format": "enum",
+          "values": [
+            "doc",
+            "deck",
+            "sheet"
+          ]
+        },
+        {
+          "id": "revision",
+          "label": "Revision",
+          "format": "text"
+        },
+        {
+          "id": "review-state",
+          "label": "State",
+          "format": "enum",
+          "values": [
+            "draft",
+            "edited",
+            "reviewed"
+          ]
+        },
+        {
+          "id": "export-state",
+          "label": "Export",
+          "format": "enum",
+          "values": [
+            "ready",
+            "blocked"
+          ]
+        },
+        {
+          "id": "owner",
+          "label": "Owner",
+          "format": "text"
+        },
+        {
+          "id": "updated",
+          "label": "Updated",
+          "format": "text"
+        }
+      ]
+    }
+  ]
+}
