@@ -1,0 +1,40 @@
+{
+  "contract": "app-screens/v2",
+  "app": "works",
+  "entry": "client.js",
+  "host_contract": "screen-records.v1",
+  "may": [
+    "records.call",
+    "records.slot"
+  ],
+  "assets": [
+    {
+      "name": "client.js",
+      "media_type": "text/javascript",
+      "sha256": "sha256:fb5262eed06f935cef50cd75d3f57da0348ea73b46b2734f1e3172122bd92c02",
+      "size": 25553
+    },
+    {
+      "name": "app.css",
+      "media_type": "text/css",
+      "sha256": "sha256:dbd630c42f215e2c7f704a1d09bfd50e1e1d5f6e84eadcde806abf07215be11f",
+      "size": 1419
+    }
+  ],
+  "provenance": {
+    "source_digest": "sha256:2c144ea1baea26a3c7d79b86da71608045103c951be2c5ffe0050158e45a4afa",
+    "sdk_digest": "sha256:eb1596c9f9b66e934eeb4396d785b2be9eff0a0b3df42fa57355c3b6c20763d6",
+    "toolchain_digest": "sha256:274edc14b2aa3ef5c62dfd2f8ea9a9ac01dc457385a9ca053be4d34714e57596"
+  },
+  "operations": [
+    "works.query",
+    "works.get",
+    "works.create",
+    "works.patch",
+    "works.trash",
+    "works.restore",
+    "works.request_review",
+    "works.review",
+    "works.export"
+  ]
+}

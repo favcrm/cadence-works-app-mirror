@@ -1,0 +1,74 @@
+:root {
+  color-scheme: light dark;
+}
+body {
+  margin: 0;
+  font: 14px/1.45 system-ui, sans-serif;
+  color: #1d1d1f;
+  background: transparent;
+}
+.works-app {
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+.works-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #d2d2d7;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+.works-row[disabled] {
+  cursor: default;
+  opacity: 0.6;
+}
+.works-form {
+  display: grid;
+  gap: 8px;
+}
+.works-form label {
+  display: grid;
+  gap: 4px;
+}
+.works-form textarea {
+  min-height: 120px;
+}
+.works-notice {
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #f5f5f7;
+}
+.works-notice.refused {
+  background: #fdecea;
+  color: #8a1c12;
+}
+.works-notice.receipt {
+  background: #eaf5ea;
+  color: #1d5e1d;
+}
+.works-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.works-empty {
+  color: #6e6e73;
+}
+.works-trashed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px dashed #d2d2d7;
+  border-radius: 6px;
+}
+.works-blocks, .works-slides, .works-sheet { display: grid; gap: 8px; }
+.works-block, .works-slide { display: grid; gap: 6px; padding: 8px; border: 1px solid #d2d2d7; border-radius: 6px; }
+.works-row-cells { display: grid; grid-auto-flow: column; gap: 6px; align-items: center; }
